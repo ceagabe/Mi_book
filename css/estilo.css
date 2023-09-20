@@ -1,0 +1,171 @@
+* {
+    /*aplica a todo*/
+
+    /*padding: 0;   corrige el menu*/
+    box-sizing: border-box;
+    /* la referencia sera con los bordes!*/
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+
+header {
+
+    background-color: white;
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+}
+
+footer {
+    background-color: white;
+
+}
+
+header,
+body,
+footer,
+main {
+
+    /* border: 3px black solid; */
+    min-height: 50px;
+    min-width: 400px;
+    margin: 0.5rem;
+    /*medida relativa 1rem es 16px  */
+
+
+}
+
+body {
+    background-color: bisque;
+    font-family: "Helvetica neue", Courier, monospace, sans-serif;
+
+}
+
+
+
+main {
+    background-color: beige;
+    min-height: 200px;
+    overflow: auto;
+}
+
+main>div {
+    /* para todo el div hijo directo del main */
+    min-height: 180px;
+    margin: 0.5rem;
+    /* border: 2px blue solid; */
+    height: auto;
+    float: left;
+    width: 65%;
+}
+
+main>aside {
+    /* para todo el aside hijo directo del main */
+    min-height: 180px;
+    margin: 0.5rem;
+    min-width: 30%;
+    float: left;
+    width: auto;
+    /* border: 2px blue solid; */
+}
+
+footer {
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+.secciones {
+    min-height: 50px;
+    margin: 0.5rem;
+    /* border: 2px green solid */
+}
+
+.secciones article {
+    /* border: 2px purple solid; */
+    margin: 0.5rem;
+    min-height: 20px;
+}
+
+#gif-ppal {
+    width: 100%;
+}
+
+#gif-sec {
+    width: 25%;
+}
+
+/* logo y menu*/
+
+.header-logo {
+
+    display: inline-block;
+    margin: 0rem;
+}
+
+.header-menubar  {
+    /* padding: 0.5rem; */
+    margin: 0.5rem 0 0.5rem 1rem;
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block
+}
+
+.header-menubar ul {
+    list-style: none
+}
+
+.header-menubar li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+    border: 1px rgb(235, 195, 222) solid;
+    border-radius: 3px;
+    padding: 0.5rem;
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+}
+
+.header-menubar :hover {
+    color: chartreuse;
+}
+
+.header-menubar a li form {
+    font-size: 2rem;
+    background: transparent;
+
+}
+
+.header-boton {
+   
+    margin: 0.5rem 0 0.5rem 1rem;
+    padding: 0.3rem;
+    border: 2px red solid;
+    position: relative;
+    float: right;
+       
+}
+
+
+
+.navimagen {
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+}
+
+#tel {
+    /* display: inline-block; */
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}

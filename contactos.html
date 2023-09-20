@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="./imagenes/OIP (4).jpg" type="image/x-icon">
+    <title>GABY</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="header-logo"> <a href="index.html"><img src="./imagenes/OIP (4).jpg" alt=""></a>
+
+        </div>
+
+        <nav class="header-menubar"> <!-- el menu se hace con listas desordena -->
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="series.html"> Series </a></li>
+                <li> <a href="noticias.html"> Noticias </a></li>
+                <li> <a href="registro.html"> Registro </a></li>
+                <li> <a href="contactos.html"> Contactos </a></li>
+            </ul>
+
+        </nav>
+
+        <button class="header-boton">login
+
+        </button>
+
+    </header>
+
+
+    <main>
+        <h2><u> Nuestros contactos </u></h2>
+
+        <table border="2">
+            <tr>
+                <td> Telefono </td>
+                <td> 1151610644 </td>
+            </tr>
+            <tr>
+                <td> Direccion </td>
+                <td> Charcas 2852, PB , CP=1425, CABA </td>
+            </tr>
+            <tr>
+                <td> Mail </td>
+                <td> <a href="mailto: gabriel_benedetti@hotmail.com">Gabriel Benedetti </a></td>
+            </tr>
+        </table> <br><br><br><br><br>
+
+        <h2>Comentarios</h2>
+
+
+        
+        <!-- <form method="post" id="formcomentarios" class="formulario formcomentarios"> -->
+
+        <form action="show-data.html"  target="_blank" >
+
+            <label for="nombre">Nombre</label>
+            <input class="field" type="text" name="nombre" id="nombre"><br><br>
+            <label for="apellido">Apellido</label>
+            <input class="field" type="text" name="apellido" id="apellido"><br><br>
+            <label for="telefono">Telefono fijo y/o movil</label>
+            <input class="field" type="tel" name="telefono" id="telefono"><br><br>
+            <label for="correo">correo</label>
+            <input class="field" type="email" name="correo" id="correo"><br><br>
+            <label for="comentario">comentario</label>
+            <textarea class="field" name="comentario" id="comentario" cols="100"
+                rows="15">Escribe tu consulta...</textarea><br><br>
+            <input class="btn" type="submit" value="enviar">
+            <input class="btn" type="submit" value="borrar">
+
+        </form>
+
+
+
+        <p> <u> Sucursal Charcas </u></p>
+
+        <img class=imagen src="./imagenes/patio-principal.jpg" alt=""><br>
+
+
+        <a href="https://goo.gl/maps/Tdiz5XgH9YHeUygFA"> ir al Mapa</a>
+        <br>
+        <p>Mapa </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4010600713373!2d-58.40937152481383!3d-34.5940186569851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8545cee841%3A0x5548de7af62bc9ca!2sFundaci%C3%B3n%20VIDA%20NATURAL%20YOGA!5e0!3m2!1ses!2sar!4v1692383396945!5m2!1ses!2sar"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+        <h4>Redes Sociales</h4>
+        <nav class="footer"> <!-- redes sociales-->
+
+            <a href="https://www.facebook.com/">
+                <img class=navimagen src="./imagenes/facebook.png" alt=""></a>
+            <a href="https://ar.linkedin.com">
+                <img class=navimagen src="./imagenes/linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com">
+                <img class=navimagen src="./imagenes/instagram.png" alt=""></a>
+            <a href="https://web.telegram.org/">
+                <img class=navimagen src="./imagenes/telegrama.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=+5491151610644">
+                <img id="tel" class=navimagen src="./imagenes/whatsapp.png" alt=""> </a>
+        </nav>
+
+        <p> Desarrollado por Gabriel Benedetti </p>
+
+
+
+    </footer>
+
+</body>
+
+</html>
