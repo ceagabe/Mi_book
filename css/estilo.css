@@ -100,7 +100,7 @@ footer {
 
 .header-logo {
 
-    display: inline-block;
+    display:inline
     margin: 0rem;
 }
 
@@ -190,10 +190,11 @@ h1 {
 
 /* Estilos para la sección de novedades con CSS Grid */
 .novedades {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
     gap: 20px; /* Espacio entre elementos */
-    padding: 20px;
+    padding: 50px;
+    
 }
 
 .item {
