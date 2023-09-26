@@ -100,9 +100,7 @@ footer {
 
 .header-logo {
 
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem;
+    display: inline-block;
     margin: 0rem;
 }
 
@@ -172,17 +170,87 @@ footer {
     /* don't forget to set a duration! */
 }
 
-.carousel-inner{
-
-    border: 2px red solid;
-    width: 100%;
-    position: relative;
-    padding: 0.5rem;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    background: pink;
-    
+    padding: 0;
 }
 
-.carousel-1{
-    background: pink;
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos para la sección de novedades con CSS Grid */
+.novedades {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos adicionales para títulos y descripciones */
+.item h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.item p {
+    font-size: 1rem;
+}
+.Contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    
+
+}
+
+h2{
+    text-align: center;
+    font-size: 48px;
+    
+    color: black;
+}
+.Absoluta{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#Card{
+    border: 1px inset; color: black;
+    margin: 10px;
+    padding: 5px;
+    width: 270px;
+    mask-position: 7px;
+    text-align: center;
+    border-radius: 5px;
+    font: bold;
+    
+}
+.imagencard{
+    margin: 10px;
 }
