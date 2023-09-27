@@ -74,6 +74,8 @@ main>aside {
 footer {
     margin: 0.5rem;
     padding: 1rem;
+  border: 2px green solid 
+
 }
 
 .secciones {
@@ -293,50 +295,3 @@ h1 {
     height: auto;
 }
 
-/* Estilos adicionales para títulos y descripciones */
-.item h2 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-
-.item p {
-    font-size: 1rem;
-}
-.Contenedor{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: auto;
-    
-
-}
-
-h2{
-    text-align: center;
-    font-size: 48px;
-    
-    color: black;
-}
-.Absoluta{
-    background-color: blue;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-#Card{
-    border: 1px inset; color: rgb(112, 53, 53);
-    margin: 10px;
-    padding: 5px;
-    width: 270px;
-    mask-position: 7px;
-    text-align: center;
-    border-radius: 5px;
-    font: bold;
-    
-}
-.imagencard{
-    margin: 10px;
-}
