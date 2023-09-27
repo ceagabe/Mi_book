@@ -224,6 +224,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
+    background-color: beige;
     
 
 }
@@ -282,6 +283,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
     gap: 20px; /* Espacio entre elementos */
     padding: 20px;
+   
 }
 
 .item {
