@@ -74,20 +74,29 @@ main>aside {
 footer {
     margin: 0.5rem;
     padding: 1rem;
-  /*border: 2px green solid*/ 
-
+    /*border: 2px green solid*/
 }
+
+    p {
+        
+        text-align: justify;  /*agregue*/
+    }
+
+
+
 
 .secciones {
     min-height: 50px;
     margin: 0.5rem;
     /* border: 2px green solid */
+
 }
 
 .secciones article {
     /* border: 2px purple solid; */
     margin: 0.5rem;
     min-height: 20px;
+    /*text-align: center;*/
 }
 
 #gif-ppal {
@@ -106,7 +115,7 @@ footer {
     margin: 0rem;
 }
 
-.header-menubar  {
+.header-menubar {
     /* padding: 0.5rem; */
     margin: 0.5rem 0 0.5rem 1rem;
     left: auto;
@@ -147,13 +156,13 @@ footer {
 }
 
 .header-boton {
-   
+
     margin: 0.5rem 0 0.5rem 1rem;
     padding: 0.3rem;
     border: 2px red solid;
     position: relative;
     float: right;
-       
+
 }
 
 
@@ -171,6 +180,12 @@ footer {
     animation-duration: 2s;
     /* don't forget to set a duration! */
 }
+
+img {
+    width: 20%;
+}
+
+
 
 /* Estilos generales */
 body {
@@ -193,8 +208,10 @@ h1 {
 /* Estilos para la sección de novedades con CSS Grid */
 .novedades {
     display: flex;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
-    gap: 20px; /* Espacio entre elementos */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas de igual ancho */
+    gap: 20px;
+    /* Espacio entre elementos */
     padding: 20px;
 }
 
@@ -218,24 +235,26 @@ h1 {
 .item p {
     font-size: 1rem;
 }
-.Contenedor{
+
+.Contenedor {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
     background-color: beige;
-    
+
 
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 48px;
-    
+
     color: black;
 }
-.Absoluta{
+
+.Absoluta {
     background-color: blue;
     width: 100px;
     height: 100px;
@@ -243,8 +262,10 @@ h2{
     top: 30px;
     left: 30px;
 }
-#Card{
-    border: 1px inset; color: black;
+
+#Card {
+    border: 1px inset;
+    color: black;
     margin: 10px;
     padding: 5px;
     width: 270px;
@@ -252,9 +273,10 @@ h2{
     text-align: center;
     border-radius: 5px;
     font: bold;
-    
+
 }
-.imagencard{
+
+.imagencard {
     margin: 10px;
 }
 
@@ -280,10 +302,12 @@ h1 {
 /* Estilos para la sección de novedades con CSS Grid */
 .novedades {
     display: flex;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
-    gap: 20px; /* Espacio entre elementos */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas de igual ancho */
+    gap: 20px;
+    /* Espacio entre elementos */
     padding: 20px;
-   
+
 }
 
 .item {
@@ -296,4 +320,3 @@ h1 {
     max-width: 100%;
     height: auto;
 }
-
