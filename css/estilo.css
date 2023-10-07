@@ -100,8 +100,8 @@ footer {
 
 .header-logo {
 
-    display:inline
-    margin: 0rem;
+    display:inline;
+    margin:flex;
 }
 
 .header-menubar  {
@@ -111,7 +111,7 @@ footer {
     position: relative;
     top: auto;
     width: auto;
-    display: inline-block
+    display: inline-block;
 }
 
 .header-menubar ul {
@@ -194,6 +194,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
     gap: 20px; /* Espacio entre elementos */
     padding: 50px;
+    margin: 1000px;
     
 }
 
@@ -222,8 +223,9 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: auto;
-    
+    margin: 100px;
+    padding: 50px;
+   
 
 }
 
