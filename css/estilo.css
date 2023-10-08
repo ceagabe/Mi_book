@@ -320,3 +320,12 @@ h1 {
     max-width: 100%;
     height: auto;
 }
+/*css para el html series*/
+.tserie {
+       
+    font-family: 'Sofia Sans', sans-serif;
+}
+.tituloserie {
+    text-align: center;
+    font-weight:bold
+}
