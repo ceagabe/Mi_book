@@ -88,15 +88,39 @@ footer {
 .secciones {
     min-height: 50px;
     margin: 0.5rem;
-    /* border: 2px green solid */
+    /* border: 2px green solid */ 
 
 }
 
 .secciones article {
-    /* border: 2px purple solid; */
+    
+    border: 1px inset;
+    color: black;
+    border-radius: 5px;
     margin: 0.5rem;
     min-height: 20px;
     /*text-align: center;*/
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: beige;
+   
+    margin: 10px;
+    padding: 5px;
+   
+    mask-position: 7px;
+    text-align: center;
+    font: bold;
+
+
+
+
+
+
+
+
+
 }
 
 #gif-ppal {
@@ -253,6 +277,9 @@ h1 {
 
 }
 
+
+
+
 h2 {
     text-align: center;
     font-size: 48px;
@@ -269,7 +296,7 @@ h2 {
     left: 30px;
 }
 
-#Card {
+#Card  {
     border: 1px inset;
     color: black;
     margin: 10px;
@@ -325,4 +352,13 @@ h1 {
 .item img {
     max-width: 100%;
     height: auto;
+}
+/*css para el html series*/
+.tserie {
+       
+    font-family: 'Sofia Sans', sans-serif;
+}
+.tituloserie {
+    text-align: center;
+    font-weight:bold
 }
