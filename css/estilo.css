@@ -347,15 +347,7 @@ h1 {
     max-width: 100%;
     height: auto;
 }
-/*css para el html series*/
-.tserie {
-       
-    font-family: Arial, sans-serif;
-}
-.tituloserie {
-    text-align: center;
-    font-weight:bold
-}
+
 /*css para el html resgistro*/
 * {
     margin: 0;
@@ -456,3 +448,154 @@ form p a {
     background-color: #eaeaea;
     color:#2f302f;
 }
+/*css grid responsive para el html series*/
+.contenedor-serie {
+    width: 100%;
+    max-width: 1340px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (4, auto);
+
+    grid-template-areas: "header-serie header-serie header-serie"
+                         "contenido-serie contenido-serie contenido-serie"
+                         "widget-1s widget-2s sidebar-serie"
+                         "footer-serie footer-serie footer-serie";
+}
+.contenedor-serie > div,
+.contenedor-serie .header-serie,
+.contenedor-serie .contenido-serie,
+.contenedor-serie .sidebar-serie,
+.contenedor-serie .footer-serie {
+    padding: 20px;
+}
+.contenedor-serie .header-serie{
+    grid-area: header-serie;
+}
+.contenedor-serie .contenido-serie {
+    grid-area: contenido-serie;
+   
+}
+.contenedor-serie .sidebar-serie {
+    grid-column: 3 / 4;
+    background: #f1d34c;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    min-height: 100px;
+    grid-area: sidebar-serie;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+.contenedor-serie .widget-1s,
+.contenedor-serie .widget-2s {
+    background: #f1d34c;
+    color:#ffffff;
+    height: 300px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+
+}
+.contenedor-serie .widget-1s {
+    grid-area: widget-1s;
+}
+.contenedor-serie .widget-2s {
+    grid-area: widget-2s;
+}
+
+.contenedor-serie .footer-serie {
+    grid-area: footer-serie;
+}
+.tserie {
+       
+    font-family: Arial, sans-serif;
+}
+.tituloserie {
+    text-align: center;
+    font-weight:bold
+}
+.contenedor-flex {
+    width: auto;
+    max-width: 1300px;
+    background: beige;
+    padding: 40px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat (2 1fr);
+    grid-row: repeat(2 1fr);
+    grid-template-areas: "elemento1 elemento2"
+                         "elemento3 elemento4";
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+.elemento {
+    margin: 10px;
+    width: auto;
+    background: beige;
+    border-radius: 10px;
+    border: 1px #070707 solid;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+.elemento1 {
+    grid-area: elemento1;
+}
+.elemento2 {
+    grid-area: elemento2;
+}
+.elemento3 {
+    grid-area: elemento3;
+}
+.elemento4 {
+    grid-area: elemento4;
+}
+.textos {
+    color:#f2f3eb;
+    font-weight: 600;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+@media screen and (max-width: 768px){
+    .contenedor-serie {
+        grid-template-areas: "header-serie header-serie header-serie"
+                             "contenido-serie contenido-serie contenido-serie"
+                             "sidebar-serie sidebar-serie sidebar-serie"
+                             "widget-1s widget-1s widget-2s"
+                             "footer-serie footer-serie footer-serie";
+    }
+    .contenedor-flex {
+        grid-template-areas: "elemento1 elemento1"
+                             "elemento2 elemento2"
+                             "elemento3 elemento3"
+                             "elemento4 elemento4";
+                             
+    }
+}
+
