@@ -55,3 +55,24 @@ let cad2=` <h4>Redes Sociales</h4>
 <p> &copy; Desarrollado por GRUPO Tienda Online  </p> `
 
 document.querySelector("footer").innerHTML=cad2
+
+// para el html registro
+let signUp = document.getElementById("signUp");
+let signIn = document.getElementById ("signIn");
+let nameInput = document.getElementById("nameInput");
+let title = document.getElementById("title");
+
+signIn.onclick = function(){
+    nameInput.style.maxHeight = "0";
+    title.innerHTML = "Login";
+    signUp.classList.add("disable");
+    signIn.classList.remove("disable");
+
+}
+signUp.onclick = function(){
+    nameInput.style.maxHeight = "60px";
+    title.innerHTML = "Registro";
+    signUp.classList.remove("disable");
+    signIn.classList.add("disable");
+    
+}
