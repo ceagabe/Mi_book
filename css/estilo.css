@@ -135,8 +135,8 @@ footer {
 
 .header-logo {
 
-    display: inline-block;
-    margin: 0rem;
+    display:inline;
+    margin:flex;
 }
 
 .header-menubar {
@@ -146,7 +146,7 @@ footer {
     position: relative;
     top: auto;
     width: auto;
-    display: inline-block
+    display: inline-block;
 }
 
 .header-menubar ul {
@@ -261,12 +261,14 @@ h1 {
 }
 
 .Contenedor {
-    display: flex;
+    display: grid;
     flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: auto;
     background-color: beige;
+    
 
 
 }
@@ -327,13 +329,13 @@ h1 {
 }
 
 /* Estilos para la sección de novedades con CSS Grid */
-.novedades {
+.novedades, .Contenedor2{
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     /* 3 columnas de igual ancho */
-    gap: 20px;
+    gap: 10px;
     /* Espacio entre elementos */
-    padding: 20px;
+    padding: 10px;
 
 }
 
