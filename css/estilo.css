@@ -262,7 +262,7 @@ h1 {
 
 .Contenedor {
     display: grid;
-    flex-direction: column;
+    flex-direction: row;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     justify-content: center;
