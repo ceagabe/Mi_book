@@ -18,10 +18,6 @@ header {
     box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
 }
 
-footer {
-    background-color: white;
-
-}
 
 header,
 body,
@@ -71,9 +67,11 @@ main>aside {
     /* border: 2px blue solid; */
 }
 
+
 footer {
     margin: 0.5rem;
     padding: 1rem;
+    background-color: white;
     /*border: 2px green solid*/
 }
 
@@ -262,8 +260,6 @@ h1 {
     margin: auto;
     background-color: beige;
     
-
-
 }
 
 
@@ -777,4 +773,21 @@ form > button:hover,
     }
 }
 
+/*css para el libros_api html */
+.tabla{
+    border: 1px black solid;
+    background-color: beige;
+    margin: 0.5rem;
+
+}
+
+/* para el index1 2 3 */
+tabla > th, td, tr {
+    border: 1px black solid;
+    
+   
+}
+td img { width: 70px;
+
+}
 
