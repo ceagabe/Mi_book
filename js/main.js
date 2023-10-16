@@ -25,6 +25,10 @@
                 <a class="nav-link" href="novedades.html" role="button">Novedades</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="carrito.html" role="button">Carrito de Compras</a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="registro.html" role="button">Registro</a>
             </li>
             <li class="nav-item">
