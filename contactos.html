@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="./imagenes/OIP (8).jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
 
 
     <title>My Book</title>
@@ -25,120 +26,57 @@
 
 
 <body>
-    <header>
-   <!-- se define por JavaScript (main.js)  -->
 
-    </header>
-
-
-    <main>
-        <h2><u> Nuestros contactos </u></h2>
-
-        <!-- <table border="2">
-            <tr>
-                <td> Telefono </td>
-                <td> 1151610644 </td>
-            </tr>
-            <tr>
-                <td> Direccion </td>
-                <td> Charcas 2852, PB , CP=1425, CABA </td>
-            </tr>
-            <tr>
-                <td> Mail </td>
-                <td> <a href="mailto: gabriel_benedetti@hotmail.com">Gabriel Benedetti </a></td>
-            </tr>
-        </table> <br><br><br><br><br> -->
-
-        <div class="container mt-3">
-    
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>Apellido</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Natalia </td>
-                  <td>Abate</td>
-                  <td>nataliaaba3@outlook.com</td>
-                </tr>
-                <tr>
-                  <td>Keyla</td>
-                  <td>Diaz</td>
-                  <td>keyladiazv2712@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Alan</td>
-                  <td>Acevedo</td>
-                  <td>acevedo.j.alan@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>Gabriel</td>
-                    <td>Benedetti</td>
-                    <td>gabriel_benedetti@hotmail.com</td>
-                  </tr>
-   
-            </tbody>
-            </table>
+  <header class="header-serie">
+    <!-- se define por JavaScript (main.js)  -->
+  </header>
+  <main class="contenido-contactos">
+    <div  class="contactos">
+      <div class="box-info">
+        <h1>Contáctate con Nosotros</h1>
+        <div class="data">
+          <p><i class= "fa-solid fa-phone"></i>1151610644</p>
+          <p><i class= "fa-solid fa-envelope"></i>keyladiazv2712@gmail.com</p>
+          <p><i class= "fa-solid fa-location-dot"></i>Charcas 2852, PB , CP=1425, CABA</p>
+        </div>
+        <div class="links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <form>
+          <div class="input-box">
+              <input type="text" placeholder="Nombre y apellido" required>
+              <i class="fa-solid fa-user"></i>
           </div>
-          
-
-
-
-
-
-
-        <h2>Comentarios</h2>
-
-
-        
-        <!-- <form method="post" id="formcomentarios" class="formulario formcomentarios"> -->
-
-        <form action="show-data.html"  target="_blank" >
-
-            <label for="nombre">Nombre</label>
-            <input class="field" type="text" name="nombre" id="nombre"><br><br>
-            <label for="apellido">Apellido</label>
-            <input class="field" type="text" name="apellido" id="apellido"><br><br>
-            <label for="telefono">Telefono fijo y/o movil</label>
-            <input class="field" type="tel" name="telefono" id="telefono"><br><br>
-            <label for="correo">correo</label>
-            <input class="field" type="email" name="correo" id="correo"><br><br>
-            <label for="comentario">comentario</label>
-            <textarea class="field" name="comentario" id="comentario" cols="100"
-                rows="15">Escribe tu consulta...</textarea><br><br>
-            <input class="btn" type="submit" value="enviar">
-            <input class="btn" type="submit" value="borrar">
-
+          <div class="input-box">
+              <input type="email" required placeholder="Correo electrónico">
+              <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input-box">
+              <input type="text" placeholder="Asunto">
+              <i class="fa-solid fa-pen-to-square"></i>
+          </div>
+          <div class="input-box">
+              <textarea placeholder="Escribe tu mensaje..."></textarea>
+          </div>
+          <button type="submit">Enviar mensaje</button>
         </form>
+        
+
+      </div>
+
+    </div>
 
 
+  </main>
+  <footer class="footer-serie">
+    <!-- se define por JavaScript (main.js)  -->
 
-        <p> <u> Sucursal Charcas </u></p>
+  </footer>
+  <script src="./js/main.js"></script>
 
-        <img class=imagen src="./imagenes/patio-principal.jpg" alt=""><br>
-
-
-        <a href="https://goo.gl/maps/Tdiz5XgH9YHeUygFA"> ir al Mapa</a>
-        <br>
-        <p>Mapa </p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4010600713373!2d-58.40937152481383!3d-34.5940186569851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8545cee841%3A0x5548de7af62bc9ca!2sFundaci%C3%B3n%20VIDA%20NATURAL%20YOGA!5e0!3m2!1ses!2sar!4v1692383396945!5m2!1ses!2sar"
-            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
-
-
-    </main>
-
-    <footer>
-         <!-- se define por JavaScript (main.js)  -->
-
-    </footer>
-    <script src="./js/main.js"></script>
 </body>
 
 </html>

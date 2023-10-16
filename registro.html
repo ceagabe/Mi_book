@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="./imagenes/OIP (8).jpg" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>My Book</title>
 </head>
@@ -26,44 +28,47 @@
 
 <body>
     <header>
-      <!-- se define por JavaScript (main.js)  -->
+        <!-- se define por JavaScript (main.js)  -->
 
     </header>
 
 
     <main>
-        <h2>Formulario de registro</h2>
-        <h3> <u>Ingrese los datos </u></h3>
-        <form action="show-data.html" align="center" target="_blank">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido"> <br><br>
-            <label for="edad">Edad:</label>
-            <input type="number" max="99" min="0" name="edad" id="edad">
-            <label for="fechadenacimiento">Fecha de Nacimiento</label>
-            <input type="date" name="fechadenacimiento" id="fechadenacimiento"><br><br>
-            <label for="genero">Genero:</label>
-            <input type="radio" name="genero" id="genero"> Hombre
-            <input type="radio" name="genero" id="genero"> Mujer
-            <input type="radio" name="genero" id="genero"> Otro
-            <input type="radio" name="genero" id="genero"> NC <br><br>
-            <label for="conocimientos">Cual o cuales son de tu interes?:</label>
-            <input type="checkbox" name="historietas"> Historietas
-            <input type="checkbox" name="trhiller"> Thriller
-            <input type="checkbox" name="comics"> Comics
-            <input type="checkbox" name="documental"> Documental
-            <input type="checkbox" name="terror"> Terror
-            <input type="checkbox" name="espiritualidad"> Espiritualidad <br>
-            <button type="submit" name="botonenviar" class="botonflat grande track_botonenviarcomentario">
-                Enviar</button>
 
-        </form><br>
+        <div class="container">
+            <div class="form-content">
+                <h1 id="title">Registro</h1>
 
+                <form>
 
+                    <div class="input-group">
 
+                        <div class="input-field" id="nameInput">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Correo">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Contraseña">
+                        </div>
+                        <p>¿Olvidaste tu contraseña? <a href="#">Click Aquí</a></p>
 
+                    </div>
+                    <div class="btn-field">
+                        <button id="signUp" type="button">Registro</button>
+                        <button id="signIn" type="button" class="disable">Login</button>
 
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
 
     </main>
 
