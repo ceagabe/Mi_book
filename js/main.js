@@ -1,7 +1,8 @@
- cad = `
+cad = `
 <div class="header-logo"> <a href="index.html"><img src="./imagenes/OIP (8).jpg" alt=""></a>
 <h1>
     My book online
+   
 </h1>
 
 </div>
@@ -25,9 +26,8 @@
                 <a class="nav-link" href="novedades.html" role="button">Novedades</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="carrito.html" role="button">Carrito de Compras</a>
+            <a class="nav-link" href="libros_api.html" role="button">Mas Libros(API)</a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="registro.html" role="button">Registro</a>
             </li>
@@ -38,10 +38,10 @@
     </div>
 </div>
 
-</nav> ` 
-document.querySelector("header").innerHTML=cad
+</nav> `
+document.querySelector("header").innerHTML = cad
 
-let cad2=` <h4>Redes Sociales</h4>
+let cad2 = ` <h4>Redes Sociales</h4>
 <nav class="footer"> <!-- redes sociales-->
 
     <a href="https://www.facebook.com/">
@@ -58,25 +58,4 @@ let cad2=` <h4>Redes Sociales</h4>
 
 <p> &copy; Desarrollado por GRUPO Tienda Online  </p> `
 
-document.querySelector("footer").innerHTML=cad2
-
-// para el html registro
-let signUp = document.getElementById("signUp");
-let signIn = document.getElementById ("signIn");
-let nameInput = document.getElementById("nameInput");
-let title = document.getElementById("title");
-
-signIn.onclick = function(){
-    nameInput.style.maxHeight = "0";
-    title.innerHTML = "Login";
-    signUp.classList.add("disable");
-    signIn.classList.remove("disable");
-
-}
-signUp.onclick = function(){
-    nameInput.style.maxHeight = "60px";
-    title.innerHTML = "Registro";
-    signUp.classList.remove("disable");
-    signIn.classList.add("disable");
-    
-}
+document.querySelector("footer").innerHTML = cad2
