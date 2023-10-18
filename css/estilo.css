@@ -774,20 +774,39 @@ form > button:hover,
 }
 
 /*css para el libros_api html */
-.tabla{
+tabla > th  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  
+}
+table{
     border: 1px black solid;
     background-color: beige;
-    margin: 0.5rem;
-
+    padding: 10px;
 }
 
-/* para el index1 2 3 */
 tabla > th, td, tr {
     border: 1px black solid;
-    
-   
+  
 }
 td img { width: 70px;
 
 }
-
+#busqueda {
+    align-self: auto;
+    align-content: center;
+    font-style: italic;
+}
+ 
+input {
+    color: black;
+    width: 15%;
+    border: 2px black solid;
+    background-color: beige;
+    padding: 0%;    
+    align-items: center;
+        
+}

@@ -30,39 +30,42 @@
 <body>
     <h3>
         API: www.googleapis.com/books
-
     </h3>
     <div id="app">
-
+        <div id="busqueda">
+            <label for=""></label> <!-- se define boton para busqueda en la API  -->
+            <input type="text" name="tema" id="tema" v-model="tema">
+            <button v-on:click="buscar()"> Buscar </button>
+        </div>
+        <br>
         <table class="tabla">
             <tr>
-                <th>Titulo </th>
-                <th>Autor </th>
-                <th>Descripcion</th>
-                <th>Imprenta </th>
-                <th>Libro </th>
-
+                <td>Titulo </td>
+                <td>Portada </td>
+                <td>Autor </td>
+                <td>Descripcion</td>
+                <td>Imprenta </td>
             </tr>
 
             <tr v-for="elemento in datos.items">
                 <td>{{elemento.volumeInfo.title}}</td>
+                <td><img v-bind:src="elemento.volumeInfo.imageLinks.thumbnail" :alt="elemento.volumeInfo.title"></td>
                 <td>{{elemento.volumeInfo.authors}}</td>
                 <td>{{elemento.volumeInfo.description}}</td>
+                <!-- <td> <a v-bind:href="elemento.volumeInfo.description"> Descripcion</a></td>  -->
                 <td>{{elemento.volumeInfo.publisher}}</td>
-                <td><img v-bind:src="elemento.volumeInfo.imageLinks.thumbnail" :alt="elemento.volumeInfo.title"></td>
-
             </tr>
         </table>
-
     </div>
 
     <footer>
         <!-- se define por JavaScript (main.js)  -->
     </footer>
-    
+
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/api.js"></script>
 </body>
+
 </html>
