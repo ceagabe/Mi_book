@@ -801,7 +801,7 @@ td img { width: 70px;
     font-style: italic;
 }
  
-input {
+#busqueda input {
     color: black;
     width: 15%;
     border: 2px black solid;
