@@ -256,16 +256,25 @@ h1 {
     flex-direction: row;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-around;
     margin: auto;
     background-color: beige;
     
 }
 
+.novedades, .Contenedor{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas de igual ancho */
+    gap: 10px;
+    /* Espacio entre elementos */
+    
+    padding: 10px;
+}
 
 
 
-h2 {
+h2, h3 {
     text-align: center;
     font-size: 48px;
 
@@ -313,20 +322,8 @@ header {
     padding: 20px;
 }
 
-h1 {
-    margin: 0;
-}
 
 /* Estilos para la sección de novedades con CSS Grid */
-.novedades, .Contenedor2{
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columnas de igual ancho */
-    gap: 10px;
-    /* Espacio entre elementos */
-    padding: 10px;
-
-}
 
 .item {
     border: 1px solid #ccc;
@@ -341,8 +338,7 @@ h1 {
 
 /*css para el html resgistro*/
 * {
-    margin: 0;
-    padding: 0;
+    
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     text-decoration: none;
