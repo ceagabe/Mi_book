@@ -809,3 +809,23 @@ td img { width: 70px;
     align-items: center;
         
 }
+
+.container-api {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    background-color: beige;
+
+}
+
+.card-api {
+    width: 300px;
+    margin: 10px 0;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 0.5rem;
+}
+

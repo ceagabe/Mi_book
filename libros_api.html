@@ -38,7 +38,22 @@
             <button v-on:click="buscar()"> Buscar </button>
         </div>
         <br>
-        <table class="tabla">
+
+        <div class="container-api d-flex flex-row flex-wrap justify-content-around">
+            <div v-for="elemento in datos.items" class="card-api">
+                <img class="card-img-top" :src="elemento.volumeInfo.imageLinks.thumbnail"
+                    :alt="elemento.volumeInfo.title">
+                <div class="card-body">
+                    <p class="card-text">Titulo: {{elemento.volumeInfo.title}}</p>
+                    <p class="card-text">Autor: {{elemento.volumeInfo.authors}}</p>
+                    <p class="card-text">Editorial: {{elemento.volumeInfo.publisher}}</p>
+                    <p class="card-text">Resumen: {{elemento.volumeInfo.description}}</p>
+                    <!-- <p class="card-text">Course:{{elemento.volumeInfo.description}}</p> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <table class="tabla">
             <tr>
                 <td>Titulo </td>
                 <td>Portada </td>
@@ -52,10 +67,10 @@
                 <td><img v-bind:src="elemento.volumeInfo.imageLinks.thumbnail" :alt="elemento.volumeInfo.title"></td>
                 <td>{{elemento.volumeInfo.authors}}</td>
                 <td>{{elemento.volumeInfo.description}}</td>
-                <!-- <td> <a v-bind:href="elemento.volumeInfo.description"> Descripcion</a></td>  -->
+                <td> <a v-bind:href="elemento.volumeInfo.description"> Descripcion</a></td>  
                 <td>{{elemento.volumeInfo.publisher}}</td>
             </tr>
-        </table>
+        </table> -->
     </div>
 
     <footer>
