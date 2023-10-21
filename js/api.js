@@ -1,25 +1,36 @@
 const { createApp } = Vue
-
 createApp({
     data() {
         return {
-            url:"https://www.googleapis.com/books/v1/volumes?q=search+terms/",
+            url: "https://www.googleapis.com/books/v1/volumes",
+            tema: "javascript",
+            key: "terms",
             error: false,
-            datos: []
+            cargando: true,
+            datos: [],
         }
     },
 
-    methods:{
-    fetchData(url) {
-        fetch(url)
+methods: {
+    fetchdata(url) {
+         fetch(url)
             .then(response => response.json())
             .then(data => {
                 console.log(data)
                 this.datos = data
-            });
+                this.cargando = false
+                console.log(url)
+            })
+            .catch(error =>
+                this.error = true
+            );
+    },
+    buscar() {
+        this.fetchdata(this.url + "?q=" + this.tema + "+" + this.key)
     }
 },
-    created(){
-          this.fetchData(this.url)
-},
+created() {
+    this.fetchdata(this.url + "?q=" + this.tema + "+" + this.key)
+}
+
 }).mount('#app')
