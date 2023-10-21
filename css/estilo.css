@@ -817,6 +817,7 @@ td img { width: 70px;
     justify-content: space-around;
     text-align: center;
     background-color: beige;
+    margin: 0.5rem;
 
 }
 
@@ -829,3 +830,6 @@ td img { width: 70px;
     padding: 0.5rem;
 }
 
+.card-api img { width: 100px;
+
+}
