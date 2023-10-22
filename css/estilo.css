@@ -415,7 +415,7 @@ form p a {
 .btn-field {
     width: 100%;
     display:flex;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 .btn-field button{
     flex-basis: 48%;
@@ -442,6 +442,7 @@ form p a {
     font-size: 16px;
     font-weight: 500;
 }
+
 /*css grid responsive para el html series*/
 .contenedor-serie {
     width: 100%;

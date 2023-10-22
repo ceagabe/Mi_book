@@ -55,4 +55,5 @@ userNameField.addEventListener("blur", (e) => validateEmptyField ("Por favor ing
 emailField.addEventListener("blur", (e) => validateEmptyField ("Por favor ingrese su Correo", e));
 passwordField.addEventListener("blur", (e) => validateEmptyField ("Por favor ingrese su Contraseña", e));
 
-emailField.addEventListener("input", validateEmailFormat)
+
+emailField.addEventListener("input", validateEmailFormat);
