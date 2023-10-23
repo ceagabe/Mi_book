@@ -31,10 +31,13 @@ const validateEmptyField = (message, e) => {
     if (fieldValue.trim().length <= 0) {
         field.nextElementSibling.classList.add("error");
         field.nextElementSibling.innerText = message;
+        
     } 
     else {
         field.nextElementSibling.classList.remove("error");
         field.nextElementSibling.innerText = "";
+        
+        
     }
 }
 
@@ -48,12 +51,19 @@ const validateEmailFormat = e => {
     } else {
         field.nextElementSibling.classList.remove("error");
         field.nextElementSibling.innerText = "";
+
     }
 }
 
 userNameField.addEventListener("blur", (e) => validateEmptyField ("Por favor ingrese su Nombre", e));
 emailField.addEventListener("blur", (e) => validateEmptyField ("Por favor ingrese su Correo", e));
 passwordField.addEventListener("blur", (e) => validateEmptyField ("Por favor ingrese su Contraseña", e));
-
-
 emailField.addEventListener("input", validateEmailFormat);
+
+$(document).ready(function() {
+    $('form').submit(function(e) {
+        return false();
+    });
+});
+
+
