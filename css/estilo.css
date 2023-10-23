@@ -833,6 +833,8 @@ td img { width: 70px;
     border-radius: 10px;
     background-color: beige;
     padding: 0.5rem;
+    min-height: 20px;
+    border: 1px inset;
 }
 
 .card-api img { width: 100px;
