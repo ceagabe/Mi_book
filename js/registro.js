@@ -60,10 +60,5 @@ emailField.addEventListener("blur", (e) => validateEmptyField ("Por favor ingres
 passwordField.addEventListener("blur", (e) => validateEmptyField ("Por favor ingrese su Contraseña", e));
 emailField.addEventListener("input", validateEmailFormat);
 
-$(document).ready(function() {
-    $('form').submit(function(e) {
-        return false();
-    });
-});
 
 

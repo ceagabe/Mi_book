@@ -39,23 +39,23 @@
             <div class="form-content">
                 <h1 id="title">Registro</h1>
 
-                <form onsubmit="return false" action="show-data.html" align="center" target="_blank">   <!--habria que llamar a una funcion para validar por JS-->
+                <form action="show-data.html" align="center" target="_blank">   <!--habria que llamar a una funcion para validar por JS-->
 
                     <div class="input-group">
 
                         <div class="input-field" id="nameInput">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder="Nombre">
+                            <input type="text" required placeholder="Nombre">
                             <div></div>
                         </div>
                         <div class="input-field">
                             <i class="fa-solid fa-envelope"></i>
-                            <input type="email" placeholder="Correo">
+                            <input type="email" required placeholder="Correo">
                             <div></div>
                         </div>
                         <div class="input-field">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Contraseña">
+                            <input type="password" placeholder="Contraseña" required minlength="8" maxlength="10">
                             <div></div>
                         </div>
                         <div class="btn-field">
